@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    z-index: -1;
+   
+}
+
+.header {
+    position: relative;
+    width: 90%;
+    margin: 0px auto;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    z-index: 10;
+}
+
+.camera  {
+    width: 70px;
+    
+}
+
+.profile-pic {
+    width: 40px;
+    
+}
+
+.explore-btn {
+    position: relative;
+    left: 600px;
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    padding: 5px 20px;
+    font-size: 18px;
+    border-radius: 30px;
+    font-weight: bold;
+   
+}
+
+.blur {
+    width: 50%;
+    height: 100vh;
+    background-color: rgba(86, 86, 86, .3);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.container p{
+    margin: 25px 0px;
+}
+
+.large-text {
+    font-size: 80px;
+    letter-spacing: 10px;
+}
+
+.small-text {
+    width: 700px;
+    height: auto;
+    line-height: 1.8rem;
+}
+
+.search-bar {
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    height: 40px;
+    width: 400px;
+    text-align: left;
+    padding-left: 5px;
+    border-radius: 20px;
+}
+
+.image-preview {
+    height: 300px;
+    position: absolute;
+    right: 15px;
+    bottom: 100px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 50px;
+    
+}
+
+.arrows {
+    width: 25px;
+    
+    cursor: pointer;
+}
+
+.images {
+    
+    display: flex;
+    
+    justify-content: space-evenly;
+}
+
+.small-image {
+    width: 100px;
+    opacity: .5;
+    margin: 0px 15px;
+    cursor: pointer;
+}
+
+.active {
+    border: 3px solid white;
+    margin: 0px 15px;
+    transform: scale(1.3);
+    opacity: 1;
+    animation: active 1s ;
+}
+
+@keyframes active {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.3);
+    }
+}
+
+.remove {
+    border: none;
+    margin: 0px 15px;
+    opacity: 1;
+    animation: active 1s ;
+}
+
